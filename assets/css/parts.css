@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* ======================================================
+  ALL.
+=======================================================*/
+body {
+  padding-top: 40px;
+  background: #fefefe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 120%;
+}
+
+a:link, a:visited {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover, a:active {
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+
+/* ======================================================
+  Layout.
+=======================================================*/
+
+#contents {
+  padding: 30px;
+}
+
+.inner {
+  width: 80%;
+  min-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ======================================================
+   Contents.
+=======================================================*/
+#reader {
+  padding: 50px;
+  color: #ddd;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-box-shadow: 1px 1px 1px #fafafa;
+  -moz-box-shadow: 1px 1px 1px #fafafa;
+  box-shadow: 1px 1px 1px #fafafa;
+}
+
+#output {
+  width: 100%;
+  font-size: 70%;
+  line-height: 1.5em;
+}
+
+/* --------------------------------------
+   clearfix.
+---------------------------------------*/
+.inner,
+.clearfix {
+  *zoom: 1;
+}
+.inner:after,
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
